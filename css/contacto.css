@@ -1,0 +1,311 @@
+/* MOBILE */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  #gridAreas{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contacto"
+    "formulario"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+  }
+  .header{
+    grid-area:header;
+  }
+  
+  .header__logos {
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header_derecha {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  
+  .logo_ferreteria {
+    width: 6.25rem;
+  }
+  
+  .logo_ig {
+    
+    width: 1.87rem;
+    margin-right: 10px;
+  }
+  .logo_fb {
+    
+    width: 1.87rem;
+  }
+  /* NAVEGADOR*/
+  .navegadorWeb {
+    height: 55%;
+    background-color: brown;
+    text-align: center;
+    position: sticky;
+    grid-area: nav;
+  }
+  
+  .navegadorWeb ul {
+    list-style: none;
+    padding: 20px;
+    display: inline-block;
+  }
+  .navegadorWeb ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 18px;
+  }
+
+    /* FORMULARIO */
+    .contacto{
+        display: flex;
+        justify-content: center;
+        grid-area: contacto;
+    }
+  .formulario {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      grid-area:formulario;
+  }
+
+  .formulario form{
+      border: solid 0.5px grey;
+      padding: 20px;
+
+  }
+
+  .formulario form hr {
+      margin-top:10px;
+      color:grey;
+  }
+
+
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: brown;
+      }
+      
+      footer h3{
+        margin: 3px;
+        color:white;
+      }
+      @media(min-width: 480px) and (max-width:1023px){
+        *{
+          margin:0;
+          padding:0;
+        } 
+        #gridAreas{
+          display: grid;
+          grid-template-areas: 
+          "header"
+          "nav"
+          "contacto"
+          "formulario"
+          "footer"
+          ;
+          grid-template-columns: 100%;
+        }
+        /*HEADER */
+        .header{
+          grid-area:header;
+        }
+        .header__logos {
+          object-fit: contain;
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .header_derecha {
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+        
+        .logo_ferreteria {
+          width: 6.25rem;
+        }
+        
+        .logo_ig {
+          
+          width: 1.87rem;
+          margin-right: 10px;
+        }
+        .logo_fb {
+          
+          width: 1.87rem;
+        }
+        /* NAVEGADOR */
+        .navegadorWeb {
+          height: 60px;
+          background-color: brown;
+          text-align: center;
+          position: sticky;
+          grid-area:nav;
+        }
+        
+        .navegadorWeb ul {
+          list-style: none;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        .navegadorWeb ul li a {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 18px;
+        }
+        /* FORMULARIO */
+        .contacto{
+          display: flex;
+          justify-content: center;
+          grid-area:contacto;
+        }
+        .formulario {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            grid-area:formulario;
+        }
+      
+        .formulario form{
+            border: solid 0.5px grey;
+            padding: 20px;
+      
+        }
+      
+        .formulario form hr {
+            margin-top:10px;
+            color:grey;
+        }
+         /* footer */
+        footer{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          background-color: brown;
+          grid-area:footer;
+        }
+        
+        footer h3{
+          margin: 3px;
+          color:white;
+        }
+      }
+      /* ESCRITORIO */
+
+      @media(min-width:1024px){
+        *{
+          margin:0;
+          padding:0;
+        } 
+        #gridAreas{
+          display: grid;
+          grid-template-areas: 
+          "header"
+          "nav"
+          "contacto"
+          "formulario"
+          "footer"
+          ;
+          grid-template-columns: 100%;
+        }
+        /*HEADER */
+        .header{
+          grid-area:header;
+        }
+        .header__logos {
+          object-fit: contain;
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .header_derecha {
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+        
+        .logo_ferreteria {
+          width: 6.25rem;
+        }
+        
+        .logo_ig {
+          
+          width: 1.87rem;
+          margin-right: 10px;
+        }
+        .logo_fb {
+          
+          width: 1.87rem;
+        }
+        /* NAVEGADOR */
+        .navegadorWeb {
+          height: 60px;
+          background-color: brown;
+          text-align: center;
+          position: sticky;
+          grid-area:nav;
+        }
+        
+        .navegadorWeb ul {
+          list-style: none;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        .navegadorWeb ul li a {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 18px;
+        }
+        /* FORMULARIO */
+        .contacto{
+          display: flex;
+          justify-content: center;
+          grid-area:contacto;
+        }
+        .formulario {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            grid-area:formulario;
+        }
+      
+        .formulario form{
+            border: solid 0.5px grey;
+            padding: 20px;
+      
+        }
+      
+        .formulario form hr {
+            margin-top:10px;
+            color:grey;
+        }
+         /* footer */
+        footer{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          background-color: brown;
+          grid-area:footer;
+        }
+        
+        footer h3{
+          margin: 3px;
+          color:white;
+        }
+    }
