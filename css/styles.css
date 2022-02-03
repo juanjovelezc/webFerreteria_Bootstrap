@@ -71,6 +71,7 @@
     "nav"
     "cuerpo"
     "domicilios"
+    "carousel"
     "footer"
     ;
     grid-template-columns: 100%;
@@ -172,6 +173,9 @@
     color:white;
     font-size:18px;
     
+  }
+  #carouselIndex{
+    grid-area: carousel;
   }
   /* BODY CATEGORIAS */
 .aviso{
@@ -428,6 +432,7 @@
       "nav"
       "cuerpo"
       "domicilios"
+      "carousel"
       "footer"
       ;
       grid-template-columns: 100%;
@@ -525,6 +530,9 @@
       background-color: #25252B;
       color:white;
       font-size: 25px;
+    }
+    #carouselIndex{
+      grid-area: carousel;
     }
     /* BODY CATEGORIAS */
 .aviso{
@@ -712,6 +720,7 @@
        /* HEADER */
     .header{
       grid-area:header;
+      background-image: "../images/R.jpeg";
     }
     /* GRID PRODUCTOS */
     #gridAreas_Productos{
@@ -780,6 +789,7 @@
       "nav"
       "cuerpo"
       "domicilios"
+      "carousel"
       "footer"
       ;
       grid-template-columns: 100%;
@@ -883,6 +893,9 @@
     background-color: #25252B;
     color:white;
     
+  }
+  #carouselIndex{
+    grid-area: carousel;
   }
       /* BODY CATEGORIAS */
         .aviso{
