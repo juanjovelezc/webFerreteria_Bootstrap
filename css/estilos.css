@@ -1,0 +1,296 @@
+/* VARIABLES*/
+/* MOBILE FIRST */
+/* SMARTPHONE */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* GRID INDEX*/
+#gridAreas {
+  display: grid;
+  grid-template-areas: "header" "nav" "cuerpo" "domicilios" "carousel" "footer";
+  grid-template-columns: 100%; }
+
+/*HEADER*/
+.header {
+  grid-area: header; }
+
+.header__logos {
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between; }
+
+.header_derecha {
+  margin-right: 10px;
+  margin-top: 5px; }
+
+.logo_ferreteria {
+  height: 13vh;
+  width: 13vh; }
+
+.logo_ig {
+  height: 6vh;
+  width: 6vh;
+  margin-right: 10px; }
+
+.logo_fb {
+  height: 6vh;
+  width: 6vh; }
+
+/* NAVEGADOR */
+.navegadorWeb {
+  height: 100%;
+  background-color: brown;
+  text-align: center;
+  position: sticky;
+  grid-area: nav; }
+  .navegadorWeb ul {
+    list-style: none;
+    padding: 20px;
+    display: inline-block; }
+    .navegadorWeb ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 18px; }
+
+/* CUERPO SMARTPHONE*/
+.indexCuerpo {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  background-color: black;
+  grid-area: cuerpo; }
+  .indexCuerpo img {
+    margin: 18px;
+    height: 50vh;
+    width: 80%; }
+  .indexCuerpo article h3 {
+    margin: 18px;
+    color: white;
+    font-size: 30px; }
+
+/* DOMICILIOS INDEX*/
+.divDomicilios {
+  background-color: #2C2C32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: domicilios; }
+  .divDomicilios img {
+    margin: 10px;
+    margin-right: 30px;
+    border: 0px solid black;
+    background-color: #25252B;
+    padding: 10px; }
+  .divDomicilios h2 {
+    padding: 10px;
+    border: 0px solid black;
+    background-color: #25252B;
+    color: white;
+    font-size: 18px; }
+
+#carouselIndex {
+  grid-area: carousel; }
+
+/* FOOTER SMARTPHONE*/
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: brown;
+  grid-area: footer; }
+  footer h3 {
+    margin: 3px;
+    color: white; }
+
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1023px) {
+  /*GRID INDEX*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "header" "nav" "cuerpo" "domicilios" "carousel" "footer";
+    grid-template-columns: 100%; }
+  .header {
+    grid-area: header; }
+  .header__logos {
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between; }
+  .header_derecha {
+    margin-right: 10px;
+    margin-top: 5px; }
+  .logo_ferreteria {
+    height: 13vh;
+    width: 13vh; }
+  .logo_ig {
+    height: 6vh;
+    width: 6vh;
+    margin-right: 10px; }
+  .logo_fb {
+    height: 6vh;
+    width: 6vh; }
+  /* NAVEGADOR */
+  .navegadorWeb {
+    height: 10%;
+    background-color: brown;
+    text-align: center;
+    position: sticky;
+    grid-area: nav; }
+    .navegadorWeb ul {
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      justify-content: center; }
+      .navegadorWeb ul li a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 18px; }
+  /* body index*/
+  .indexCuerpo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    background-color: black;
+    grid-area: nav; }
+    .indexCuerpo img {
+      margin: 18px;
+      height: 50vh;
+      width: 80%; }
+    .indexCuerpo article h3 {
+      margin: 18px;
+      color: white;
+      font-size: 30px; }
+  /* DOMICILIOS INDEX*/
+  .divDomicilios {
+    background-color: #2C2C32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: domicilios; }
+    .divDomicilios img {
+      margin: 10px;
+      margin-right: 30px;
+      border: 0px solid black;
+      background-color: #25252B;
+      padding: 10px; }
+    .divDomicilios h2 {
+      padding: 10px;
+      border: 0px solid black;
+      background-color: #25252B;
+      color: white;
+      font-size: 25px; }
+  #carouselIndex {
+    grid-area: carousel; }
+  /* FOOTER GNRL */
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: brown;
+    grid-area: footer; }
+    footer h3 {
+      margin: 3px;
+      font-size: 25px;
+      color: white; } }
+
+/* ESCRITORIO */
+@media (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0; }
+  /* GRID INDEX*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "header" "nav" "cuerpo" "domicilios" "carousel" "footer";
+    grid-template-columns: 100%; }
+  /* HEADER */
+  .header {
+    grid-area: header; }
+  .header__logos {
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between; }
+  .header_derecha {
+    margin-right: 10px;
+    margin-top: 5px; }
+  .logo_ferreteria {
+    height: 13vh;
+    width: 13vh; }
+  .logo_ig {
+    height: 6vh;
+    width: 6vh;
+    margin-right: 10px; }
+  .logo_fb {
+    height: 6vh;
+    width: 6vh; }
+  /* NAVEGADOR */
+  .navegadorWeb {
+    height: 100%;
+    background-color: brown;
+    text-align: center;
+    position: sticky;
+    grid-area: nav; }
+    .navegadorWeb ul {
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      justify-content: center; }
+      .navegadorWeb ul li:hover {
+        color: red;
+        background-color: rosybrown;
+        height: 100%; }
+      .navegadorWeb ul li a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 18px; }
+  /* BODY INDEX */
+  .indexCuerpo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: black;
+    grid-area: cuerpo; }
+    .indexCuerpo img {
+      margin: 18px;
+      height: 50vh;
+      width: 80%; }
+    .indexCuerpo article h3 {
+      margin: 18px;
+      color: white;
+      font-size: 30px; }
+  /* DOMICILIOS INDEX*/
+  .divDomicilios {
+    background-color: #2C2C32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: domicilios; }
+    .divDomicilios img {
+      margin: 10px;
+      margin-right: 30px;
+      border: 0px solid black;
+      background-color: #25252B;
+      padding: 10px; }
+    .divDomicilios h2 {
+      padding: 10px;
+      border: 0px solid black;
+      background-color: #25252B;
+      color: white; }
+  #carouselIndex {
+    grid-area: carousel; }
+  /* FOOTER GENERAL*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: brown;
+    grid-area: footer; }
+    footer h3 {
+      margin: 3px;
+      color: white; } }

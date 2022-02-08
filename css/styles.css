@@ -720,7 +720,6 @@
        /* HEADER */
     .header{
       grid-area:header;
-      background-image: "../images/R.jpeg";
     }
     /* GRID PRODUCTOS */
     #gridAreas_Productos{
