@@ -1,144 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/icono.jpg">
-    <link rel="StyleSheet" href="/css/bootstrap.css">
-    <link rel="StyleSheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/icono.jpg">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/estilos.css">
 
-    <title>Contacto | Ferreteria</title>
+  <title>Contacto | Ferreteria</title>
 </head>
+
 <body id="gridAreas_Contacto">
-    <header>
-        <div class="header__logos">
-            <div class="header_izquierda">
-                <img class="logo_ferreteria" src="/images/logo-ferreteria.jpg" alt="LOGO_FERRETERIA"/>
-            </div>
-            <div class="header_derecha">
-                <img class="logo_ig" src="/images/logo-ig.png" alt="LOGO_IG"/>
-                <img  class="logo_fb" src="/images/logo-fb.png" alt="LOGO_FB"/>
-            </div>
+  <!--Header-->
+  <header>
+    <div class="header__logos">
+      <div class="header_izquierda">
+        <a href="/index.html">
+          <img class="logo_ferreteria" src="/images/logo-ferreteria.jpg" alt="LOGO_FERRETERIA" />
+        </a>
+      </div>
+      <div class="header_derecha">
+        <a href="https://www.instagram.com"><img class="logo_ig" src="/images/logo-ig.png" alt="LOGO_IG" /></a>
+        <a href="https://www.facebook.com"><img class="logo_fb" src="/images/logo-fb.png" alt="LOGO_FB" /></a>
+      </div>
+    </div>
+  </header>
+  <!--Navegador-->
+  <nav class="navegadorWeb">
+    <ul>
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/pages/categorias.html">Categorias</a></li>
+      <li><a href="/pages/ubicacion.html">Ubicacion</a></li>
+      <li><a href="/pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <!--Formulario de contacto-->
+  <div class="contacto">
+    <h1>FORMULARIO DE CONTACTO</h1>
+  </div>
+  <div class="formulario">
+    <form>
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="nombreCompleto" class="form-control" />
+        <label class="form-label" for="nombreCompleto">Nombre completo</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="correoElectronico" class="form-control" />
+        <label class="form-label" for="correoElectronico">Correo electronico</label>
+      </div>
+
+      <!-- Telefono input -->
+      <div class="form-outline mb-4">
+        <input type="number" id="telefonoContacto" class="form-control" />
+        <label class="form-label" for="telefonoContacto">Telefono</label>
+      </div>
+
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="mensajeContacto" rows="4"></textarea>
+        <label class="form-label" for="mensajeContacto">Mensaje</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="telefonoContacto" checked />
+        <label class="form-check-label" for="telefonoContacto">
+          Enviarme una copia de este mensaje
+        </label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-success btn-block mb-4">Enviar</button>
+      <button type="reset" class="btn btn-secondary btn-block mb-4">Limpiar</button>
+
+    </form>
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <footer class="text-white text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <!--DIRECCIÓN FERRETERÍA-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h3 class="text-uppercase">Ferreteria</h3>
+
+            <p>
+              <h5>CR 99 #999 SUR 99</h5>
+              <h5>Medellín, Colombia</h5>
+            </p>
+          </div>
+          <!--MAPA DEL SITIO-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Paginas</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="/pages/categorias.html" class="text-white">Categorias</a>
+              </li>
+              <li>
+                <a href="/pages/ubicacion.html" class="text-white">Ubicación</a>
+              </li>
+              <li>
+                <a href="/pages/productos.html" class="text-white">Productos</a>
+              </li>
+              <li>
+                <a href="/pages/contacto.html" class="text-white">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <!--REPOSITORIO-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Repositorio en GITHUB</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/juanjovelezc" class="text-white">Juan José Vélez Cano</a>
+              </li>
+
+            </ul>
+          </div>
         </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://github.com/juanjovelezc">JJVC</a>
+      </div>
+    </footer>
+  </div>
 
+  <script src="/js/bootstrap.js"></script>
 
-    </header>            
-            <nav class="navegadorWeb">
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/pages/categorias.html">Categorias</a></li>
-                    <li><a href="/pages/ubicacion.html">Ubicacion</a></li>
-                    <li><a href="/pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-
-    <div class="contacto">
-        <h1>FORMULARIO DE CONTACTO</h1>
-    </div>
-    <div class="formulario">
-        <form>
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="nombreCompleto" class="form-control" />
-              <label class="form-label" for="nombreCompleto">Nombre completo</label>
-            </div>
-          
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="correoElectronico" class="form-control" />
-              <label class="form-label" for="correoElectronico">Correo electronico</label>
-            </div>
-
-            <!-- Telefono input -->
-            <div class="form-outline mb-4">
-                <input type="number" id="telefonoContacto" class="form-control" />
-                <label class="form-label" for="telefonoContacto">Telefono</label>
-              </div>
-          
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control" id="mensajeContacto" rows="4"></textarea>
-              <label class="form-label" for="mensajeContacto">Mensaje</label>
-            </div>
-          
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="telefonoContacto" checked />
-              <label class="form-check-label" for="telefonoContacto">
-                Enviarme una copia de este mensaje
-              </label>
-            </div>
-          
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-success btn-block mb-4">Enviar</button>
-            <button type="reset" class="btn btn-secondary btn-block mb-4">Limpiar</button>
-
-          </form>
-    </div>
-    <div class="footer">
-        <footer class="text-white text-center text-lg-start">
-            <!-- Grid container -->
-            <div class="container p-4">
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                  <h3 class="text-uppercase">Ferreteria</h3>
-          
-                  <p>
-                    <h5>CR 99 #999 SUR 99</h5>
-                    <h5>Medellín, Colombia</h5>
-                  </p>
-                </div>
-                <!--Grid column-->
-          
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Paginas</h5>
-          
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="./pages/categorias.html" class="text-white">Categorias</a>
-                    </li>
-                    <li>
-                      <a href="./pages/ubicacion.html" class="text-white">Ubicación</a>
-                    </li>
-                    <li>
-                      <a href="./pages/productos.html" class="text-white">Productos</a>
-                    </li>
-                    <li>
-                      <a href="./pages/contacto.html" class="text-white">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-          
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase mb-0">Repositorio en GITHUB</h5>
-          
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="https://github.com/juanjovelezc" class="text-white">Juan José Vélez Cano</a>
-                    </li>
-    
-                  </ul>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </div>
-            <!-- Grid container -->
-          
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2020 Copyright:
-              <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-          </footer>
-    </div>
-    
-    <script src="/js/bootstrap.js"></script>
 </html>
