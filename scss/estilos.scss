@@ -2,6 +2,11 @@
 $bg-domicilios: #2C2C32;
 $bg2-domicilios:#25252B;
 
+@mixin flex{
+  display:flex;
+  justify-content: center;
+}
+
 /* MOBILE FIRST */
 /* SMARTPHONE */
 * {
@@ -33,6 +38,7 @@ $bg2-domicilios:#25252B;
     "nav"
     "contacto"
     "formulario"
+    "redes"
     "footer"
   ;
   grid-template-columns: 100%;
@@ -171,8 +177,7 @@ $bg2-domicilios:#25252B;
 /* DOMICILIOS INDEX*/
 .divDomicilios {
   background-color: $bg-domicilios;
-  display: flex;
-  justify-content: center;
+  @include flex;
   align-items: center;
   grid-area: domicilios;
 
@@ -199,8 +204,7 @@ $bg2-domicilios:#25252B;
 
 /* BODY CATEGORIAS */
 .aviso {
-  display: flex;
-  justify-content: center;
+  @include flex;
   margin: 10px;
   border: solid 0px white;
   border-radius: 6px;
@@ -220,9 +224,8 @@ $bg2-domicilios:#25252B;
 }
 
 .imgs_productos {
-  display: flex;
+  @include flex;
   flex-flow: row wrap;
-  justify-content: center;
   grid-area: categorias;
 
 }
@@ -266,8 +269,7 @@ $bg2-domicilios:#25252B;
 
 /* UBICACION */
 .titulo {
-  display: flex;
-  justify-content: center;
+  @include flex;
   border: solid 0px white;
   background: rgb(121, 9, 11);
   background: linear-gradient(90deg, rgba(121, 9, 11, 1) 35%, rgba(255, 0, 0, 1) 100%);
@@ -285,15 +287,13 @@ $bg2-domicilios:#25252B;
 }
 
 .map_ubicacion {
-  display: flex;
-  justify-content: center;
+  @include flex;
   padding: 10px;
   background-color: #2C2C32;
 }
 
 .seccionDireccion {
-  display: flex;
-  justify-content: center;
+  @include flex;
   background-color: #25252B;
 }
 
@@ -309,27 +309,17 @@ $bg2-domicilios:#25252B;
 }
 
 .direccionHorario {
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: solid 1px gray;
-  padding: 10px;
-  background-color: #2C2C32;
-  width: 7rem;
-
-
+  @extend .direccion;
 }
 
 /* FORMULARIO CONTACTO*/
 .contacto {
-  display: flex;
-  justify-content: center;
+  @include flex;
   grid-area: contacto;
 }
 
 .formulario {
-  display: flex;
-  justify-content: center;
+  @include flex;
   padding: 20px;
   grid-area: formulario;
 
@@ -338,6 +328,68 @@ $bg2-domicilios:#25252B;
     padding: 20px;
   }
 }
+
+/* REDES SOCIALES > CONTACTO */
+$estiloBotones:(colorRedes:white,
+  color-ig: black,
+  negrilla: bold,
+  borde: 0px solid white,
+  1rem: 1rem);
+.redesSociales{
+  background-color: #2C2C32;
+  h2{
+    color:white;
+    margin-top:0.5rem
+  }
+}
+.titulo_redesSociales {
+  text-align: center;
+  grid-area: redes;
+}
+
+.redesSociales_div {
+  @include flex;
+  padding: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 1px;
+  
+
+  .btn-fb {
+    padding: map-get($estiloBotones, 1rem);
+    margin-right: 1.5rem;
+    color: map-get($estiloBotones, colorRedes);
+    font-weight: map-get($estiloBotones, negrilla);
+    border: map-get($estiloBotones, borde);
+  }
+
+  .btn-ig {
+    padding: map-get($estiloBotones, 1rem);
+    margin-right: 1.5rem;
+    color: map-get($estiloBotones, color-ig);
+    font-weight: map-get($estiloBotones, negrilla);
+    border: map-get($estiloBotones, borde);
+
+  }
+
+  .btn-wsp {
+    padding: map-get($estiloBotones, 1rem);
+    color: map-get($estiloBotones, colorRedes);
+    font-weight: map-get($estiloBotones, negrilla);
+    border: map-get($estiloBotones, borde);
+
+  }
+}
+$redes:(fb: #0779E9,
+  ig: white,
+  wsp:#52ED6D);
+
+@each $red,
+$color in $redes {
+  .btn-#{$red} {
+    background-color: $color;
+  }
+}
+
 
 /* PRODUCTOS */
 .productos {
@@ -351,8 +403,7 @@ $bg2-domicilios:#25252B;
   margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: center;
+  @include flex;
   align-items: flex-end;
   background-color: grey;
   color: white;
@@ -411,8 +462,7 @@ footer {
 
   .navegadorWeb {
     ul {
-      display: flex;
-      justify-content: center;
+      @include flex;
 
       li {
         &:hover {
@@ -445,7 +495,6 @@ footer {
   .direccionHorario {
     background-color: #2C2C32;
     width: 40%;
-    display: flex;
-    justify-content: center;
+    @include flex;
   }
 }
