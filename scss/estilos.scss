@@ -2,9 +2,14 @@
 $bg-domicilios: #2C2C32;
 $bg2-domicilios:#25252B;
 
-@mixin flex{
-  display:flex;
+@mixin flex {
+  display: flex;
   justify-content: center;
+}
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
 }
 
 /* MOBILE FIRST */
@@ -111,19 +116,16 @@ $bg2-domicilios:#25252B;
 }
 
 .logo_ferreteria {
-  height: 13vh;
-  width: 13vh;
+  @include sizes(13vh, 13vh);
 }
 
 .logo_ig {
-  height: 6vh;
-  width: 6vh;
+  @include sizes (6vh, 6vh);
   margin-right: 10px;
 }
 
 .logo_fb {
-  height: 6vh;
-  width: 6vh;
+  @include sizes(6vh, 6vh);
 }
 
 /* NAVEGADOR */
@@ -161,8 +163,7 @@ $bg2-domicilios:#25252B;
 
   img {
     margin: 18px;
-    height: 50vh;
-    width: 80%;
+    @include sizes(80%, 50vh)
   }
 
   article {
@@ -335,13 +336,16 @@ $estiloBotones:(colorRedes:white,
   negrilla: bold,
   borde: 0px solid white,
   1rem: 1rem);
-.redesSociales{
+
+.redesSociales {
   background-color: #2C2C32;
-  h2{
-    color:white;
-    margin-top:0.5rem
+
+  h2 {
+    color: white;
+    margin-top: 0.5rem
   }
 }
+
 .titulo_redesSociales {
   text-align: center;
   grid-area: redes;
@@ -352,7 +356,7 @@ $estiloBotones:(colorRedes:white,
   padding: 1.5rem;
   border: 1px solid grey;
   border-radius: 1px;
-  
+
 
   .btn-fb {
     padding: map-get($estiloBotones, 1rem);
@@ -379,6 +383,7 @@ $estiloBotones:(colorRedes:white,
 
   }
 }
+
 $redes:(fb: #0779E9,
   ig: white,
   wsp:#52ED6D);

@@ -58,17 +58,17 @@
   margin-top: 5px; }
 
 .logo_ferreteria {
-  height: 13vh;
-  width: 13vh; }
+  width: 13vh;
+  height: 13vh; }
 
 .logo_ig {
-  height: 6vh;
   width: 6vh;
+  height: 6vh;
   margin-right: 10px; }
 
 .logo_fb {
-  height: 6vh;
-  width: 6vh; }
+  width: 6vh;
+  height: 6vh; }
 
 /* NAVEGADOR */
 .navegadorWeb {
@@ -97,8 +97,8 @@
   grid-area: cuerpo; }
   .indexCuerpo img {
     margin: 18px;
-    height: 50vh;
-    width: 80%; }
+    width: 80%;
+    height: 50vh; }
   .indexCuerpo article h3 {
     margin: 18px;
     color: white;
