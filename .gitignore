@@ -1,0 +1,2 @@
+#Lista de elementos ignorados al realizar el push al repositorio
+node_modules
